@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Cooee Unwanted Friends - BETA</title>
+  </head>
+  <body>
+    <button class="dark-mode" id="dark-mode" onclick="darkMode()" type="button">
+      Lights OFF
+    </button>
+    <button
+      class="dark-mode"
+      id="dark-mode-reverse"
+      onclick="darkMode()"
+      type="button"
+    >
+      Lights ON
+    </button>
+    <div class="container">
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main"> cooee unwanted friends </span>
+          <span class="heading-primary-sub">
+            put the names you want to delete from your friend list on the forms
+            below:
+          </span>
+        </h1>
+      </div>
+      <br />
+      <div class="input-names" id="amigos">
+        <!-- Iremos carregar os inputs através do  método adicionaAmigos -->
+        <input type="text" class="list" id="namesList0" /><br />
+        <input type="text" class="list" id="namesList1" /><br />
+        <input type="text" class="list" id="namesList2" /><br />
+        <input type="text" class="list" id="namesList3" /><br />
+        <input type="text" class="list" id="namesList4" /><br />
+        <input type="text" class="list" id="namesList5" /><br />
+        <input type="text" class="list" id="namesList6" /><br />
+        <input type="text" class="list" id="namesList7" /><br />
+        <input type="text" class="list" id="namesList8" /><br />
+        <input type="text" class="list" id="namesList9" /><br />
+      </div>
+      <div class="buttonSave">
+        <button onclick="saveForm()" class="btn-save">Save!</button>
+      </div>
+      <div class="buttonSubmit">
+        <button onclick="submit()" class="btn-submit">Delete!</button>
+      </div>
+      <div class="buttonClear">
+        <button onclick="clearFriends()" class="btn-clear">
+          Clear!
+        </button>
+      </div>
+    </div>
+ 
+    <script src="js/deleteem.js"></script>
+    <script src="js/darkmode.js"></script>
+  
+</html>
